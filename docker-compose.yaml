@@ -1,0 +1,8 @@
+version: '3' 
+services: 
+  web: 
+    # 指定 Dockerfile 所在文件夹的路径。 Compose 将会利用它自动构建这个镜像，然后使用这个镜像
+    build: app 
+    # 暴露端口信息
+    ports: 
+      - '5000:5000'
